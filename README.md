@@ -32,6 +32,7 @@ To run this project, you need a modern web browser. No additional software or se
   Open the index.html file in your preferred web browser.
 
 **Usage**
+
 1. Open the index.html file in a web browser.
 2. Select the grades and credits for each subject using the dropdown menus.
 3. Click the "Calculate" button to compute the GPA.
@@ -43,8 +44,9 @@ To run this project, you need a modern web browser. No additional software or se
 3. index.js - The JavaScript file containing the logic for GPA calculation.
 
 **Code Overview**
+
 **HTML**
-The HTML file contains the structure of the application, including dropdowns for grades and credits, and a button to calculate the GPA.
+The HTML file contains the application's structure, including dropdowns for grades and credits, and a button to calculate the GPA.
 
 **CSS**
 The CSS file defines the styles for the application, including the background, layout, and responsiveness.
@@ -56,10 +58,12 @@ The JavaScript file contains functions to:
 3. Dynamically update the displayed GPA.
    
 **Key Functions**
+
 1. getGrades(): Retrieves the grade elements.
 2. getGradesArr(): Converts grade selections to numeric values.
 3. getCreditsArr(): Retrieves and converts credit selections to numeric values.
 4. calculateGPA(): Calculates the GPA and updates the UI.
    
 **Contributing**
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
