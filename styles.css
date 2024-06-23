@@ -209,6 +209,35 @@ option {
   }
 }
 
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 0.9em;
+  }
+
+  .grade-select,
+  .credits-select {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+
+  .output {
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 90%;
+  }
+
+  #btn {
+    width: 90%;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  label {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+}
+
 #btn:active {
   transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
