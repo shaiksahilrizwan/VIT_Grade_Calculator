@@ -44,12 +44,12 @@ To run this project, you need a modern web browser. No additional software or se
    2. Open cgpa.html for cumulative GPA calculation.
       
 ### Usage
-   **Semester GPA Calculation (index.html)**
+   - **Semester GPA Calculation (index.html)**
       - Open index.html in a web browser.
       - Select grades and credits for each subject using the dropdown menus.
       - Click the "Calculate GPA" button to compute the GPA for the semester.
       - The GPA will be displayed on the page.
-   **Cumulative GPA Calculation (cgpa.html)**
+   - **Cumulative GPA Calculation (cgpa.html)**
       - Open cgpa.html in a web browser.
       - Enter details for each semester, including grades and credits.
       - Click the "Calculate CGPA" button to compute the cumulative GPA.
