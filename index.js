@@ -68,6 +68,7 @@ function calculateGPA() {
     gpaLabel = document.createElement("div");
     gpaLabel.id = "gpa-label";
     gpaLabel.className = "output roboto-slab";
+    gpaLabel.style.borderRadius = "50px";
     document
       .querySelector(".container")
       .insertBefore(gpaLabel, document.getElementById("btn"));

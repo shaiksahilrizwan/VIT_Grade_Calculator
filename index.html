@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <navbar class="roboto-slab">
+      <div class="navbar">
+        <div class="links">
+          <a href="./index.html" class="home">Home</a>
+          <a href="./cgpa.html" class="cgpa">CGPA</a>
+        </div>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle-label">
+            <span class="toggle-ball"></span>
+          </label>
+        </div>
+      </div>
+    </navbar>
     <div class="h1 roboto-slab">
-      <h1>VIT CGPA CALCULATOR</h1>
+      <h1>VIT GPA CALCULATOR</h1>
     </div>
     <div class="container roboto-slab" id="container">
       <div class="item" id="item-1">
@@ -232,9 +246,10 @@
           <option value="12">12</option>
         </select>
       </div>
-      <button id="btn">Calculate</button>
+      <button id="btn" class="roboto-slab">Calculate</button>
     </div>
 
     <script src="./index.js"></script>
+    <script src="./toggle.js"></script>
   </body>
 </html>

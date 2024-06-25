@@ -50,18 +50,13 @@ body::before {
   flex-shrink: 0;
 }
 
-.item {
-  opacity: 1;
-  flex-shrink: 0;
-}
-
-.grade-select,
-.credits-select {
+.gpa-input,
+.credits-input {
   width: 300px;
   text-align: center;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 10px;
+  border-radius: 50px;
   background: linear-gradient(
     112.1deg,
     rgb(32, 38, 57) 11.4%,
@@ -73,68 +68,30 @@ body::before {
 }
 
 label {
-  padding: 8px;
-  border-radius: 5px;
+  display: inline-block; /* Change the display property */
   background: linear-gradient(
     112.1deg,
     rgb(32, 38, 57) 11.4%,
     rgb(63, 76, 119) 70.2%
   );
+  padding: 8px;
   color: white;
-  flex-shrink: 0;
+  width: 100px; /* Set the desired width */
+  border-radius: 50px;
+  text-align: center;
 }
 
 #item-1 {
   margin-top: 50px;
 }
 
-option {
-  color: black;
-}
-
-.output {
-  background: linear-gradient(
-    109.6deg,
-    rgb(204, 228, 247) 11.2%,
-    rgb(237, 246, 250) 100.2%
-  );
-  padding: 10px;
-  width: 77%;
-  height: 60px;
-  text-align: center;
-  margin: 10px 0;
-  align-content: center;
-  font-size: 2rem;
-  flex-shrink: 0;
-}
-
-#btn {
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57) 11.4%,
-    rgb(63, 76, 119) 70.2%
-  );
-  color: white;
-  padding: 10px;
-  width: 30%;
-  height: 60px;
-  border-radius: 10px;
-  border: 0;
-  text-align: center;
-  margin: 10px 0;
-  align-content: center;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .container {
     width: 80%;
   }
 
-  .grade-select,
-  .credits-select {
+  .gpa-input,
+  .credits-input {
     width: 250px;
   }
 }
@@ -144,8 +101,8 @@ option {
     width: 90%;
   }
 
-  .grade-select,
-  .credits-select {
+  .gpa-input,
+  .credits-input {
     width: 200px;
   }
 
@@ -163,8 +120,8 @@ option {
     font-size: 1.2em;
   }
 
-  .grade-select,
-  .credits-select {
+  .gpa-input,
+  .credits-input {
     width: 200px;
   }
 
@@ -177,7 +134,7 @@ option {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .h1 {
     font-size: 1em;
   }
@@ -187,13 +144,13 @@ option {
     padding: 10px;
   }
 
-  .grade-select,
-  .credits-select {
+  .gpa-input,
+  .credits-input {
     width: 150px;
   }
 
   label {
-    width: 100px;
+    width: 80px;
   }
 
   #btn {
@@ -208,13 +165,13 @@ option {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   .h1 {
     font-size: 0.9em;
   }
 
-  .grade-select,
-  .credits-select {
+  .gpa-input,
+  .credits-input {
     width: 130px;
     font-size: 0.9rem;
   }
@@ -237,6 +194,83 @@ option {
   }
 }
 
+@media (max-width: 470px) {
+  .h1 {
+    font-size: 0.8em;
+  }
+
+  .gpa-input,
+  .credits-input {
+    width: 100px;
+    font-size: 0.8em;
+  }
+
+  .output {
+    font-size: 1.1rem;
+    padding: 5px;
+    width: 90%;
+  }
+
+  #btn {
+    width: 90%;
+    height: 45px;
+    font-size: 0.7rem;
+  }
+
+  label {
+    width: 70px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .h1 {
+    font-size: 0.8em;
+  }
+
+  .gpa-input,
+  .credits-input {
+    width: 90px;
+    font-size: 0.8em;
+  }
+
+  .output {
+    font-size: 1.1rem;
+    padding: 5px;
+    width: 90%;
+  }
+
+  #btn {
+    width: 90%;
+    height: 45px;
+    font-size: 0.7rem;
+  }
+
+  label {
+    width: 60px;
+    font-size: 0.7rem;
+  }
+}
+
+#btn {
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  color: white;
+  padding: 10px;
+  width: 30%;
+  height: 60px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+  margin: 10px 0;
+  align-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
 #btn:active {
   transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
@@ -244,67 +278,6 @@ option {
   /* Lowering the shadow */
 }
 
-/* Dark Mode theme */
-
-body.dark-mode {
-  background: radial-gradient(
-    circle at -4% -12.9%,
-    rgb(74, 98, 110) 0.3%,
-    rgb(30, 33, 48) 90.2%
-  );
-}
-
-body.dark-mode::before {
-  background: radial-gradient(
-    circle at 18.7% 37.8%,
-    rgb(250, 250, 250) 0%,
-    rgb(225, 234, 238) 90%
-  ); /* opacity: 0.5; Adjust opacity as needed */
-}
-
-.dark-mode .h1 {
-  color: black;
-}
-
-.dark-mode .container {
-  background: linear-gradient(to right, #434343 0%, #000000 100%);
-}
-
-.dark-mode .grade-select,
-.dark-mode .credits-select,
-.dark-mode label,
-.dark-mode #btn,
-.dark-mode .home,
-.dark-mode .cgpa {
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  color: black;
-}
-
-.dark-mode .output {
-  background: radial-gradient(
-    circle at 18.7% 37.8%,
-    rgb(250, 250, 250) 0%,
-    rgb(225, 234, 238) 90%
-  );
-}
-
-.dark-mode .navbar {
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
-}
-
-.dark-mode .toggle-label {
-  background: radial-gradient(
-    circle at 18.7% 37.8%,
-    rgb(250, 250, 250) 0%,
-    rgb(225, 234, 238) 90%
-  );
-}
-
-/* Light Mode */
 .navbar {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
@@ -315,6 +288,22 @@ body.dark-mode::before {
   border-radius: 50px;
   margin-top: 10px;
   padding: 0;
+}
+
+.output {
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+  padding: 10px;
+  width: 77%;
+  height: 60px;
+  text-align: center;
+  margin: 10px 0;
+  align-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
 }
 
 .links {
@@ -407,4 +396,64 @@ a {
     width: 4rem;
     height: 1.5rem;
   }
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background: radial-gradient(
+    circle at -4% -12.9%,
+    rgb(74, 98, 110) 0.3%,
+    rgb(30, 33, 48) 90.2%
+  );
+}
+
+body.dark-mode::before {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  ); /* opacity: 0.5; Adjust opacity as needed */
+}
+
+.dark-mode .h1 {
+  color: black;
+}
+
+.dark-mode .container {
+  background: linear-gradient(to right, #434343 0%, #000000 100%);
+}
+
+.dark-mode .gpa-input,
+.dark-mode .credits-input,
+.dark-mode label,
+.dark-mode #btn,
+.dark-mode .home,
+.dark-mode .cgpa {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: black;
+}
+
+.dark-mode .output {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+}
+
+.dark-mode .navbar {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+}
+
+.dark-mode .toggle-label {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
 }
