@@ -45,25 +45,25 @@ To run this project, you need a modern web browser. No additional software or se
       
 ### Usage
    **Semester GPA Calculation (index.html)**
-      1. Open index.html in a web browser.
-      2. Select grades and credits for each subject using the dropdown menus.
-      3. Click the "Calculate GPA" button to compute the GPA for the semester.
-      4. The GPA will be displayed on the page.
+      - Open index.html in a web browser.
+      - Select grades and credits for each subject using the dropdown menus.
+      - Click the "Calculate GPA" button to compute the GPA for the semester.
+      - The GPA will be displayed on the page.
    **Cumulative GPA Calculation (cgpa.html)**
-      1. Open cgpa.html in a web browser.
-      2. Enter details for each semester, including grades and credits.
-      3. Click the "Calculate CGPA" button to compute the cumulative GPA.
-      4. The cumulative GPA will be displayed on the page.
+      - Open cgpa.html in a web browser.
+      - Enter details for each semester, including grades and credits.
+      - Click the "Calculate CGPA" button to compute the cumulative GPA.
+      - The cumulative GPA will be displayed on the page.
 ### Code Overview
-   **HTML Files**
-      1. index.html: Contains structure for semester GPA calculation.
-      2. cgpa.html: Contains structure for cumulative GPA calculation.
-   **CSS Files**
-      1. styles.css: Styles index.html.
-      2. cgpa.css: Styles cgpa.html.
-   **JavaScript Files**
-      1. index.js: Logic for GPA calculation in index.html.
-      2. cgpa.js: Logic for cumulative GPA calculation in cgpa.html.
+   - **HTML Files**
+      - index.html: Contains structure for semester GPA calculation.
+      - cgpa.html: Contains structure for cumulative GPA calculation.
+   - **CSS Files**
+      - styles.css: Styles index.html.
+      - cgpa.css: Styles cgpa.html.
+   - **JavaScript Files**
+      - index.js: Logic for GPA calculation in index.html.
+      - cgpa.js: Logic for cumulative GPA calculation in cgpa.html.
          
 ### Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+- Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
