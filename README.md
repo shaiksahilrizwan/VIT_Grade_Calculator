@@ -13,11 +13,11 @@ This web application calculates the GPA (Grade Point Average) for students based
 
 ## Project Structure
 
-- `index.html` - Main page for semester GPA calculation.
+- `index.php` - Main page for semester GPA calculation.
 - `index.js` - JavaScript file for logic related to semester GPA calculation.
 - `styles.css` - CSS file for styling `index.html`.
 - `assets/` - Directory containing images and other assets used in the application.
-- `cgpa.html` - Page for calculating cumulative GPA.
+- `cgpa.php` - Page for calculating cumulative GPA.
 - `cgpa.js` - JavaScript file for logic related to cumulative GPA calculation.
 - `cgpa.css` - CSS file for styling `cgpa.html`.
 
@@ -25,7 +25,7 @@ This web application calculates the GPA (Grade Point Average) for students based
 
 ### Prerequisites
 
-To run this project, you need a modern web browser. No additional software or server is required.
+To run this project, you need a modern web browser and Apache server,PHP and mysql are required.
 
 ### Installation
 
@@ -40,12 +40,12 @@ To run this project, you need a modern web browser. No additional software or se
    
 3. **Open the Pages**
 
-   1. Open index.html for semester GPA calculation.
-   2. Open cgpa.html for cumulative GPA calculation.
+   1. Open index.php for semester GPA calculation.
+   2. Open cgpa.php for cumulative GPA calculation.
       
 ### Usage
    - **Semester GPA Calculation (index.html)**
-      - Open index.html in a web browser.
+      - Open index.php in a web browser.
       - Select grades and credits for each subject using the dropdown menus.
       - Click the "Calculate GPA" button to compute the GPA for the semester.
       - The GPA will be displayed on the page.
@@ -55,9 +55,9 @@ To run this project, you need a modern web browser. No additional software or se
       - Click the "Calculate CGPA" button to compute the cumulative GPA.
       - The cumulative GPA will be displayed on the page.
 ### Code Overview
-   - **HTML Files**
-      - index.html: Contains structure for semester GPA calculation.
-      - cgpa.html: Contains structure for cumulative GPA calculation.
+   - **PHP Files**
+      - index.php: Contains structure for semester GPA calculation.
+      - cgpa.php: Contains structure for cumulative GPA calculation.
    - **CSS Files**
       - styles.css: Styles index.html.
       - cgpa.css: Styles cgpa.html.
